@@ -11,6 +11,7 @@ RUN npm run build
 # not to build it, but if package size does not matter, it can be skipped with little to no consequences, so that's
 # what I am doing here
 
-ENV NEXT_PUBLIC_SERVER_ENDPOINT="http://backend:8000/api"
+ENV BACKEND_SERVER_ENDPOINT="http://backend:8000/api"
+RUN rm .env.local
 EXPOSE 3000
 CMD ["npm", "run", "start"]

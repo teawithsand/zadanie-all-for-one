@@ -1,5 +1,10 @@
+// This Line is a hack
+// in the frontend int evalutates to "/api"
+// on the backend it evalutes to whatever is this env var
+// But redirecting is set up in a way, that each valid endpoint of this frontend server is a valid endpoint of the backend server
+// so this works
 const server =
-	process.env.NEXT_PUBLIC_SERVER_ENDPOINT || "http://localhost:3000/api"
+	process?.env?.BACKEND_SERVER_ENDPOINT || "/api"
 
 export interface WeatherReport {
 	id: string
