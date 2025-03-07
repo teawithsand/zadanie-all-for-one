@@ -1,8 +1,4 @@
-import {
-	useAtom,
-	useAtomValue,
-	useSetAtom,
-} from "jotai"
+import { useAtom, useAtomValue, useSetAtom } from "jotai"
 
 import { FormAtoms, FormDataBase, FormFieldAtoms } from "./defines"
 import { FormErrorBag } from "./error"
