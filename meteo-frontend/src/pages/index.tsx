@@ -18,5 +18,7 @@ export default function Home({ reports }: {
     reports: WeatherReport[]
 }) {
 
-    return <>{JSON.stringify(reports)}</>
+    return <DefaultPageLayout>
+        <WeatherReportListPage initialReports={reports} />
+    </DefaultPageLayout>
 }
