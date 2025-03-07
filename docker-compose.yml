@@ -11,6 +11,7 @@ services:
       - backend
     networks:
       - bcknet
+    restart: "always"
   backend:
     build:
       context: ./meteo-server
@@ -19,6 +20,7 @@ services:
       - "127.0.0.1:12746:8000"
     networks:
       - bcknet
+    restart: "always"
 
 networks:
   bcknet:
