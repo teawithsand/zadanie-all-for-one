@@ -1,0 +1,13 @@
+{
+	"name": "meteo-workspace",
+	"type": "module",
+	"workspaces": [
+		"meteo-frontend",
+		"meteo-backend"
+	],
+	"private": "true",
+	"devDependencies": {
+		"prettier": "^3.5.3",
+		"prettier-plugin-tailwindcss": "^0.6.11"
+	}
+}

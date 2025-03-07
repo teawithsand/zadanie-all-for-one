@@ -1,0 +1,27 @@
+{
+	"plugins": ["prettier-plugin-tailwindcss"],
+	"arrowParens": "avoid",
+	"semi": false,
+	"useTabs": true,
+	"tabWidth": 4,
+	"singleQuote": false,
+	"trailingComma": "all",
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true,
+	"importOrderCaseInsensitive": true,
+	"importOrderGroupNamespaceSpecifiers": true,
+	"overrides": [
+		{
+			"files": "*.ts",
+			"options": {
+				"parser": "typescript"
+			}
+		},
+		{
+			"files": "*.tsx",
+			"options": {
+				"parser": "typescript"
+			}
+		}
+	]
+}

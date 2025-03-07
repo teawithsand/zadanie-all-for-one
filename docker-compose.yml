@@ -1,0 +1,24 @@
+services:
+  frontend:
+    build:
+      context: ./meteo-frontend
+      dockerfile: Dockerfile 
+    ports:
+      - "0.0.0.0:12745:3000"
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - backend
+    networks:
+      - bcknet
+  backend:
+    build:
+      context: ./meteo-server
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:12746:8000"
+    networks:
+      - bcknet
+
+networks:
+  bcknet:
